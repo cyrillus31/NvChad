@@ -22,6 +22,6 @@ vim.opt.rtp:prepend(lazypath)
 require "plugins"
 
 -- vim.o.shell = "C:\\Program Files\\Git\\bin\\bash.exe"
-vim.g.shell = 'C:\\Program Files\\Git\\bin\\bash.exe'
--- vim.g.shell = "C:\\Program Files\\Git\\usr\\bin\\bash.exe"
+-- vim.g.shell = 'C:\\Program Files\\Git\\bin\\bash.exe'
+-- vim.o.shell = "C:\\Program Files\\Git\\usr\\bin\\bash.exe"
 -- vim.o.shell = "bash.exe"

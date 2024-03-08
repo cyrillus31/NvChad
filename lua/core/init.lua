@@ -7,6 +7,9 @@ g.nvchad_theme = config.ui.theme
 g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 g.toggle_theme_icon = "   "
 g.transparency = config.ui.transparency
+-- g.shell = 'C:\\Program Files\\Git\\bin\\bash.exe'
+-- vim.opt.shell = "C:\\Program Files\\Git\\bin\\bash.exe"
+vim.g.shell = "bash.exe"
 
 g.have_nerd_font = true
 
