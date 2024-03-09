@@ -26,8 +26,7 @@ local default_plugins = {
     end,
     opts = {
       terminals = {
-        shell = vim.o.shell,
-        term_cmd = vim.o.shell,
+        shell = "bash",
         list = {},
         type_opts = {
           float = {
