@@ -31,10 +31,10 @@ local default_plugins = {
         type_opts = {
           float = {
             relative = 'editor',
-            row = 0.3,
-            col = 0.25,
-            width = 0.5,
-            height = 0.4,
+            row = 0.2,
+            col = 0.15,
+            width = 0.7,
+            height = 0.6,
             border = "single",
           },
           horizontal = { location = "rightbelow", split_ratio = .3, },
@@ -254,9 +254,19 @@ local default_plugins = {
     end,
   },
 
+  { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+
   {
     "nvim-telescope/telescope.nvim",
-    dependencies = { "nvim-treesitter/nvim-treesitter", { "nvim-telescope/telescope-fzf-native.nvim", build = "make" } },
+    dependencies = { "nvim-treesitter/nvim-treesitter",
+      {
+        "nvim-telescope/telescope-fzf-native.nvim",
+        build = "make",
+        config = function()
+          require("telescope").load_extension("fzf")
+        end
+      }
+    },
     cmd = "Telescope",
     init = function()
       require("core.utils").load_mappings "telescope"

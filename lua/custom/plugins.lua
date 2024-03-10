@@ -1,7 +1,7 @@
 local plugins = {
   {
     "jose-elias-alvarez/null-ls.nvim",
-    ft = {"python"},
+    ft = {"python", "lua", "javascript"},
     opts = function()
       return require "custom.configs.null-ls" 
     end,
@@ -14,6 +14,7 @@ local plugins = {
         "ruff",
         "pyright",
         "black",
+        "lua-language-server"
       },
     },
   },
