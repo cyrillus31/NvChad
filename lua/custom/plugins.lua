@@ -3,7 +3,7 @@ local plugins = {
     "jose-elias-alvarez/null-ls.nvim",
     ft = {"python", "lua", "javascript"},
     opts = function()
-      return require "custom.configs.null-ls" 
+      return require("custom.configs.null-ls")
     end,
   },
   {
@@ -26,5 +26,6 @@ local plugins = {
     end,
   },
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
+  {'ThePrimeagen/vim-be-good', event = 'VimEnter'},
 }
 return plugins
