@@ -14,7 +14,8 @@ local plugins = {
         "ruff",
         "pyright",
         "black",
-        "lua-language-server"
+        "lua-language-server",
+        "gopls",
       },
     },
   },

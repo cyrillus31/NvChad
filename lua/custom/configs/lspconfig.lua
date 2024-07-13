@@ -10,3 +10,12 @@ lspconfig.pyright.setup({
   capabilities = capabilities,
   filetypes = {"python", "lua"},
 })
+
+
+lspconfig.gopls.setup(
+  {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = {"go"}
+  }
+)
